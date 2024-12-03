@@ -1,0 +1,11 @@
+scalar DateTime
+type Query{
+    now: DateTime
+}
+type Mutation{
+    checkIn(req: CheckInReq) : Boolean
+}
+
+input CheckInReq{
+    plate:String
+}
